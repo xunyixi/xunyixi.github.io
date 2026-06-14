@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 寻伊科技
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
+author: 寻伊科技
+language: zh-CN
 timezone: ''
 
 # URL
@@ -96,9 +96,12 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: anzhiyu
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/xunyixi/xunyixi.github.io
+  branch: main
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
