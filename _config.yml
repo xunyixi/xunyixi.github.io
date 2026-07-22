@@ -98,10 +98,17 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: anzhiyu
 
+# Search
+search:
+  path: search.json
+  field: post
+  content: true
+  format: html
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/xunyixi/xunyixi.github.io
+  repo: git@github.com:xunyixi/xunyixi.github.io.git
   branch: main
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
