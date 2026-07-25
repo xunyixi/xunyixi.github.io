@@ -1,0 +1,19 @@
+- link_list:
+    - name: 安知鱼
+      avatar: https://cdn.jsdelivr.net/gh/anzhiyu-c/hexo-theme-anzhiyu@master/source/img/friend_404.gif
+      link: https://anzhiy.cn/
+    - name: Hexo
+      avatar: https://hexo.io/favicon.svg
+      link: https://hexo.io/
+    - name: GitHub
+      avatar: https://github.com/favicon.ico
+      link: https://github.com/
+    - name: 哔哩哔哩
+      avatar: https://www.bilibili.com/favicon.ico
+      link: https://www.bilibili.com/
+    - name: 掘金
+      avatar: https://juejin.cn/favicon.ico
+      link: https://juejin.cn/
+    - name: 知乎
+      avatar: https://www.zhihu.com/favicon.ico
+      link: https://www.zhihu.com/

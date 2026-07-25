@@ -1,0 +1,19 @@
+- path_name: /album/nature/
+  cover: https://picsum.photos/800/600?random=1
+  class_name: 自然风光
+  description: 大自然的美丽瞬间
+
+- path_name: /album/tech/
+  cover: https://picsum.photos/800/600?random=2
+  class_name: 科技产品
+  description: 数码设备与技术
+  
+- path_name: /album/life/
+  cover: https://picsum.photos/800/600?random=3
+  class_name: 生活点滴
+  description: 日常生活记录
+  
+- path_name: /album/travel/
+  cover: https://picsum.photos/800/600?random=4
+  class_name: 旅行足迹
+  description: 走过的地方
