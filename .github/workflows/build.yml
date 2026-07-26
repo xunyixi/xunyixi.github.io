@@ -5,9 +5,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Node18环境
+        with:
+          fetch-depth: 0
+      - name: Node20环境
         uses: actions/setup-node@v4
         with:
           node-version: "20"
@@ -16,8 +20,8 @@ jobs:
         run: |
           npm ci
           NODE_OPTIONS="--max-old-space-size=2048" npx hexo generate
-      - name: 上传public成品到gh-pages分支
-        uses: peaceiris/actions-gh-pages@v4
+      - name: 部署到gh-pages分支
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          publish_dir: ./public
-          publish_branch: gh-pages
+          folder: public
+          branch: gh-pages
