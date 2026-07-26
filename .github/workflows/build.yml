@@ -1,0 +1,23 @@
+name: Hexo预编译静态文件
+on:
+  push:
+    branches: [ source ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Node18环境
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          cache: npm
+      - name: 安装依赖并编译
+        run: |
+          npm ci
+          NODE_OPTIONS="--max-old-space-size=2048" npx hexo generate
+      - name: 上传public成品到gh-pages分支
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          publish_dir: ./public
+          publish_branch: gh-pages
